@@ -15,6 +15,8 @@ let g:has_async = v:version >= 800 || has('nvim')
 call plug#begin('~/.vim/bundle')
 
 " Define bundles via Github repos
+Plug 'elixir-lang/vim-elixir'
+Plug 'derekprior/vim-trimmer'
 Plug 'christoomey/vim-run-interactive'
 
 " If fzf has already been installed via Homebrew, use the existing fzf

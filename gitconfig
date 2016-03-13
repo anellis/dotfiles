@@ -26,5 +26,6 @@
   autosquash = true
 [include]
   path = ~/.gitconfig.local
-[diff]
-  colorMoved = zebra
+[user]
+	name = Ashley Ellis
+	email = anellis12@gmail.com
