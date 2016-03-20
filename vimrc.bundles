@@ -15,6 +15,7 @@ let g:has_async = v:version >= 800 || has('nvim')
 call plug#begin('~/.vim/bundle')
 
 " Define bundles via Github repos
+Plug 'scwood/vim-hybrid'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'elixir-lang/vim-elixir'
 Plug 'derekprior/vim-trimmer'

@@ -119,6 +119,7 @@ endif
 " Make it obvious where 80 characters is
 set textwidth=80
 set colorcolumn=+1
+highlight ColorColumn ctermbg=7
 
 " Numbers
 set number
@@ -183,6 +184,10 @@ set complete+=kspell
 
 " Always use vertical diffs
 set diffopt+=vertical
+
+"Colorscheme
+syntax on
+set background=dark
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")
