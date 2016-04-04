@@ -170,6 +170,7 @@ let g:UltiSnipsExpandTrigger = "<S-tab>"
 let g:UltiSnipsListSnippets = "<c-j>"
 let g:UltiSnipsJumpForwardTrigger = "<S-tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
+let g:SuperTabNoCompleteAfter = ['^', ',', '\s']
 
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
