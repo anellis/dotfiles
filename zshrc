@@ -10,6 +10,8 @@ ZSH_THEME="dstufft"
 export PATH="$HOME/.bin:$PATH"
 eval "$(rbenv init - --no-rehash)"
 
+export EDITOR="vim"
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
