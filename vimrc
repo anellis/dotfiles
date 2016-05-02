@@ -5,6 +5,23 @@ autocmd VimResized * :wincmd =
 nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
 nnoremap <leader>= :wincmd =<cr>
 
+" Easy access to the start of the line
+nmap 0 ^
+
+" Split edit vimrc
+nmap <leader>vr :sp $MYVIMRC<cr>
+
+" Source vimrc
+nmap <leader>so :source $MYVIMRC<cr>
+
+" Move up and down by visible lines if current line is wrapped
+nmap j gj
+nmap k gk
+
+"Command aliases for typoed commands
+command! Q q
+command! W w
+
 "run specs from vim
 let g:rspec_command = "call VtrSendCommand('rspec {spec}')"
 
