@@ -80,5 +80,10 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+# vi mode
+bindkey -v
+bindkey "^F" vi-cmd-mode
+bindkey jj vi-cmd-mode
+
 # Set personal aliases
 source ~/.aliases
