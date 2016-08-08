@@ -217,7 +217,8 @@ set diffopt+=vertical
 
 "Colorscheme
 syntax on
-set background=dark
+let g:seoul256_background = 233
+colorscheme seoul256
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")
