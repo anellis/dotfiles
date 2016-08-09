@@ -27,6 +27,8 @@ alias gcm="git commit -m"
 alias gc="git clone"
 alias grc="git rebase --continue"
 alias gl="git log"
+alias gd="git diff"
+alias grm="git rebase master"
 
 # Include custom aliases
 if [[ -f ~/.aliases.local ]]; then
