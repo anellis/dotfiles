@@ -1,0 +1,4 @@
+#!/bin/sh
+
+repo_name=$1
+hub create $repo_name
