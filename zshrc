@@ -24,3 +24,19 @@ bindkey jj vi-cmd-mode
 
 # Set personal aliases
 source ~/.aliases
+
+# Start a new blog post
+function new_post() {
+  cd ~/projects/anellis.github.io/_posts
+  SLUGIFIED="$(echo -n "$1" | sed -e 's/[^[:alnum:]]/-/g' | tr -s '-' | tr A-Z a-z)"
+  SLUG=$(date +"%Y-%m-%d"-$SLUFIGIED.md)
+
+  echo <<front_matter > $SLUG
+---
+layout: post
+---
+front_matter
+
+  cd ../
+  vim .
+}
