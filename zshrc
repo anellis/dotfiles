@@ -40,3 +40,5 @@ front_matter
   cd ../
   vim .
 }
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
