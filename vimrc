@@ -49,6 +49,9 @@ set autowrite     " Automatically :write before running commands
 set modelines=0   " Disable modelines as a security precaution
 set nomodeline
 
+" Copy using the system keyboard
+set clipboard=unnamed
+
 " Shorten the escaping
 inoremap jj <Esc>
 
