@@ -17,6 +17,9 @@ nmap <leader>vr :sp $MYVIMRC<cr>
 " Source vimrc
 nmap <leader>so :source $MYVIMRC<cr>
 
+"Don't autowrap text at textwidth
+au FileType * set fo-=t
+
 " Move up and down by visible lines if current line is wrapped
 nmap j gj
 nmap k gk
@@ -48,9 +51,6 @@ set nomodeline
 
 " Shorten the escaping
 inoremap jj <Esc>
-
-" Clipboard for tmux
-set clipboard=unnamed
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
