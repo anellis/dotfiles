@@ -27,5 +27,9 @@
 [include]
   path = ~/.gitconfig.local
 [user]
-	name = Ashley Ellis
+	name = Ashley Ellis Pierce
 	email = anellis12@gmail.com
+[github]
+  user = aellispierce
+[credential]
+  helper = osxkeychain
