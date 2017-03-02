@@ -12,7 +12,7 @@ eval "$(rbenv init - --no-rehash)"
 
 export EDITOR="vim"
 
-export PATH="/Users/ashley/.rbenv/shims:/Users/ashley/.bin:.git/safe/../../bin:/usr/local/sbin:/Users/ashley/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/Users/aellispierce/.rbenv/shims:/Users/aellispierce/.bin:.git/safe/../../bin:/usr/local/sbin:/Users/aellispierce/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
