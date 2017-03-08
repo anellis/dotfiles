@@ -16,6 +16,9 @@ alias be="bundle exec"
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
 
+# Path helpers
+alias gh="cd ~/github/github"
+
 #Git
 alias g="git"
 alias gco="git checkout"
