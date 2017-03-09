@@ -17,6 +17,13 @@ nmap <leader>vr :sp $MYVIMRC<cr>
 " Source vimrc
 nmap <leader>so :source $MYVIMRC<cr>
 
+" replace the vselected text
+vnoremap <C-r> "hy:%s/\V<C-r>=escape(@h,'/')<CR>//gc<left><left><left>
+
+" search for the selected text in the current file
+" this is useful for more complex strings than #/* can search
+vnoremap <C-f> "hy:/\V<C-r>=escape(@h,'/')<CR>/<CR>
+
 "Don't autowrap text at textwidth
 au FileType * set fo-=t
 
