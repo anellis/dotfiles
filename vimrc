@@ -149,6 +149,9 @@ if executable('ag')
   endif
 endif
 
+" Don't limit the amount of files CtrlP will find
+let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:20,results:20'
+
 " Make it obvious where 80 characters is
 set textwidth=80
 set colorcolumn=+1

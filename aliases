@@ -12,6 +12,7 @@ alias b="bundle"
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
 alias s="rspec"
 alias be="bundle exec"
+alias dbp="bin/rake db:migrate db:test:prepare"
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
@@ -33,6 +34,7 @@ alias grc="git rebase --continue"
 alias gl="git log"
 alias gd="git diff"
 alias grm="git rebase master"
+alias gmm="git fetch && git merge origin/master"
 
 # Include custom aliases
 if [[ -f ~/.aliases.local ]]; then
