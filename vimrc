@@ -12,10 +12,10 @@ nnoremap <leader>= :wincmd =<cr>
 nmap 0 ^
 
 " Split edit vimrc
-nmap <leader>vr :sp $MYVIMRC<cr>
+nmap <leader>vr :sp ~/dotfiles/vimrc<cr>
 
 " Source vimrc
-nmap <leader>so :source $MYVIMRC<cr>
+nmap <leader>so :source ~/dotfiles/vimrc<cr>
 
 " replace the vselected text
 vnoremap <C-r> "hy:%s/\V<C-r>=escape(@h,'/')<CR>//gc<left><left><left>
