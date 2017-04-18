@@ -20,6 +20,9 @@ alias path='echo $PATH | tr -s ":" "\n"'
 # Path helpers
 alias gh="cd ~/github/github"
 
+# Weather
+alias wttr="curl wttr.in/durham"
+
 #Git
 alias g="git"
 alias gco="git checkout"
