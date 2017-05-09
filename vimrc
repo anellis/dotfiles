@@ -15,14 +15,10 @@ nmap 0 ^
 nmap <leader>vr :sp ~/dotfiles/vimrc<cr>
 
 " Source vimrc
-nmap <leader>so :source ~/dotfiles/vimrc<cr>
+nmap <leader>so :source $MYVIMRC<cr>
 
 " replace the vselected text
 vnoremap <C-r> "hy:%s/\V<C-r>=escape(@h,'/')<CR>//gc<left><left><left>
-
-" search for the selected text in the current file
-" this is useful for more complex strings than #/* can search
-vnoremap <C-f> "hy:/\V<C-r>=escape(@h,'/')<CR>/<CR>
 
 "Don't autowrap text at textwidth
 au FileType * set fo-=t
@@ -45,6 +41,11 @@ map <Leader>a :call RunAllSpecs()<CR>
 
 "run commands with a custom runner if in github/github
 let test#runners = {'Ruby': ['GitHub']}
+
+"see the diff of the current file
+map <leader>d :!clear && git diff %<cr>
+"see the log of the current file
+map <leader>o :!clear && git log %<cr>
 
 set backspace=2   " Backspace deletes like most programs in insert mode
 set nobackup
