@@ -10,12 +10,18 @@ ZSH_THEME="dstufft"
 export PATH="$HOME/.bin:$PATH"
 eval "$(rbenv init - --no-rehash)"
 
+plugins=(history-substring-search)
+
 export EDITOR="vim"
 
 export PATH="/Users/aellispierce/.rbenv/shims:/Users/aellispierce/.bin:.git/safe/../../bin:/usr/local/sbin:/Users/aellispierce/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+
+# search when pressing up or down
+bindkey "^[[A" history-substring-search-up
+bindkey "^[[B" history-substring-search-down
 
 # vi mode
 bindkey -v
