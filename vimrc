@@ -140,18 +140,10 @@ set nojoinspaces
 if executable('ag')
   " Use Ag over Grep
   set grepprg=ag\ --nogroup\ --nocolor
-
-  " Use ag in fzf for listing files. Lightning fast and respects .gitignore
-  let $FZF_DEFAULT_COMMAND = 'ag --literal --files-with-matches --nocolor --hidden -g ""'
-
-  if !exists(":Ag")
-    command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
-    nnoremap \ :Ag<SPACE>
-  endif
 endif
 
-" Don't limit the amount of files CtrlP will find
-let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:20,results:20'
+" Use FZF like ctrlp
+nnoremap <c-p> :FZF<cr>
 
 " Make it obvious where 80 characters is
 set textwidth=80

@@ -48,3 +48,4 @@ front_matter
 }
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
+export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
