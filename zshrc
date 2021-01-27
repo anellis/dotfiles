@@ -10,6 +10,8 @@ ZSH_THEME="dstufft"
 export PATH="$HOME/.bin:$PATH"
 eval "$(rbenv init - --no-rehash)"
 
+export PATH=~/.npm-global/bin:$PATH
+
 plugins=(history-substring-search)
 
 export EDITOR="vim"
@@ -49,3 +51,4 @@ front_matter
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
 export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
+export PATH="/usr/local/opt/node@14/bin:$PATH"
