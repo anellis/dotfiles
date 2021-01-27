@@ -52,6 +52,9 @@ Plug 'christoomey/vim-tmux-runner'
 Plug 'mileszs/ack.vim'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'mattn/emmet-vim'
+Plug 'MaxMEllon/vim-jsx-pretty'
 
 if g:has_async
   Plug 'dense-analysis/ale'
