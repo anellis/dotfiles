@@ -52,3 +52,4 @@ front_matter
 . $HOME/.asdf/completions/asdf.bash
 export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 export PATH="/usr/local/opt/node@14/bin:$PATH"
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
