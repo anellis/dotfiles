@@ -195,6 +195,7 @@ set undodir=~/.vim/backups
 set undofile
 
 " Snipmate Triggers
+let g:snipMate = { 'snippet_version' : 1 }
 let g:UltiSnipsExpandTrigger = "<S-tab>"
 let g:UltiSnipsListSnippets = "<c-j>"
 let g:UltiSnipsJumpForwardTrigger = "<S-tab>"
