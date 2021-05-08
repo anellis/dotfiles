@@ -144,8 +144,11 @@ if executable('ag')
   set grepprg=ag\ --nogroup\ --nocolor
 endif
 
+" Setting ag as the default source for fzf
+let $FZF_DEFAULT_COMMAND='ag -g ""'
+
 " Use FZF like ctrlp
-nnoremap <c-p> :FZF<cr>
+nnoremap <c-p> :FZF $PWD<cr>
 
 " Make it obvious where 80 characters is
 set textwidth=80
